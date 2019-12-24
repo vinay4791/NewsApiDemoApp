@@ -1,0 +1,2 @@
+package vinay.com.newsapidemoapp
+

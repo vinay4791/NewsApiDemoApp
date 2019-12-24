@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".newsdetails.NewsDetailsActivity">
+
+    <ImageView
+        android:id="@+id/news_iv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/transparent_to_black_gradient" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <TextView
+            android:id="@+id/description_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_details_side_spacing"
+            android:layout_marginLeft="@dimen/new_details_side_spacing"
+            android:layout_marginEnd="@dimen/new_details_side_spacing"
+            android:layout_marginRight="@dimen/new_details_side_spacing"
+            android:layout_marginBottom="@dimen/new_details_side_spacing"
+            android:text="hello dnflwkfl dlksdvnsldv lskvlksnlvnsldv lskdnlvksndlv "
+            android:textColor="@color/news_descrition_textcolor"
+            android:textSize="@dimen/medium_text_size"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/source_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_details_side_spacing"
+            android:layout_marginLeft="@dimen/new_details_side_spacing"
+            android:layout_marginBottom="16dp"
+            android:text="CNN"
+            android:textColor="@color/headlines_text_color"
+            android:textSize="@dimen/large_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/description_tv"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/new_details_side_spacing"
+            android:layout_marginRight="@dimen/new_details_side_spacing"
+            android:layout_marginBottom="16dp"
+            android:text="2019-12-19"
+            android:textColor="@color/headlines_text_color"
+            android:textSize="@dimen/large_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/description_tv"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/new_details_headline_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/new_details_side_spacing"
+            android:layout_marginLeft="@dimen/new_details_side_spacing"
+            android:layout_marginEnd="@dimen/new_details_side_spacing"
+            android:layout_marginRight="@dimen/new_details_side_spacing"
+            android:layout_marginBottom="@dimen/new_details_headlines_bottom_spacing"
+            android:text="Headlines"
+            android:textColor="@color/headlines_title_white"
+            android:textSize="@dimen/extra_large_text_size"
+            app:layout_constraintBottom_toTopOf="@+id/source_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
